@@ -1,0 +1,114 @@
+.travel-carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.embla {
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  align-items: center;
+}
+
+.embla__slide {
+  flex: 0 0 40%;
+  min-width: 0;
+  padding: 0 10px;
+}
+
+.embla__slide__inner {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  transform: scale(0.8);
+  filter: blur(4px);
+  opacity: 0.6;
+  transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+}
+
+.embla__slide.is-active .embla__slide__inner {
+  transform: scale(1);
+  filter: blur(0);
+  opacity: 1;
+}
+
+.embla__slide__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.embla__slide__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+
+.embla__slide__title {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.embla__pagination {
+  display: flex;
+  gap: 8px;
+}
+
+.embla__dot {
+  width: 30px;
+  height: 3px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.embla__dot.is-active {
+  background-color: #d4af37;
+}
+
+.embla__navigation {
+  display: flex;
+  gap: 24px;
+}
+
+.embla__btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.embla__btn:hover {
+  border-color: #000000;
+}
