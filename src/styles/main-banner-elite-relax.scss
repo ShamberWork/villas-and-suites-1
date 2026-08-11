@@ -1,1 +1,38 @@
-//сделай баннер без отступов
+section.hero.kv {
+    --IMG_URL: url("/elite-villias-banner.webp");
+    max-width: unset !important;
+    margin-top: 0 !important;
+    background: unset !important;
+}
+
+section.hero.kv article.outer {
+    width: 100%;
+    max-width: 1920px;
+    max-height: 720px;
+    background: var(--IMG_URL) 50% / cover no-repeat;
+    position: relative;
+}
+
+section.hero.kv article.outer:after {
+    content: "";
+    width: 100%;
+    padding-top: 53.3333%;
+    display: block !important;
+}
+
+section.hero.kv article:before {
+    display: none !important;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    border: 0;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    overflow: hidden;
+}

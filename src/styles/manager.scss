@@ -1,1 +1,130 @@
-//manager
+    section.hero.fin-c2a .contact-block {
+        width: 100%;
+        background: url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/fin-c2a-desktop.jpg) 50% / cover no-repeat;
+        position: relative;
+    }
+    section.hero.fin-c2a .contact-block:before {
+        content: "";
+        padding-top: 31.4583%;
+        display: block;
+    }
+    section.hero.fin-c2a .contact-block > * {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.fin-c2a .contact-block {
+            width: 100vw;
+            max-width: none;
+            background-image: url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/fin-c2a-mobile.jpg);
+            position: relative;
+        }
+        section.hero.fin-c2a .contact-block:before {
+            content: "";
+            padding-top: 63.6111%;
+            display: block;
+        }
+        section.hero.fin-c2a .contact-block > * {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    section.hero.fin-c2a .contact-block .info {
+        width: 55%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 4em;
+        display: flex;
+    }
+    section.hero.fin-c2a .contact-block .info > * {
+        max-width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.fin-c2a .contact-block .info {
+            width: 65%;
+            justify-content: flex-start;
+            padding: 2em;
+            font-size: 70%;
+        }
+    }
+    section.hero.fin-c2a .contact-block .info h3 {
+        text-align: left;
+        margin-bottom: 1em;
+        font-size: 1.6em;
+    }
+    #app-form {
+        z-index: 10000;
+        width: 100vw;
+        height: 100vh;
+        font-family: museosans;
+        font-weight: 300;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none !important;
+    }
+    #app-form,
+    #app-form * {
+        box-sizing: border-box;
+    }
+    #app-form:target {
+        display: flex !important;
+    }
+    #app-form > a {
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        cursor: default;
+        background: rgba(0, 0, 0, 0.8);
+        position: absolute;
+    }
+    #app-form .popin-container {
+        height: 90vh;
+        width: 90vw;
+        max-width: 450px;
+        background: #fff;
+        border-radius: 1em;
+        margin: auto;
+        padding: 1em 1.5em;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 32px rgba(0, 0, 0, 0.42);
+    }
+    @media screen and (max-width: 768px) {
+        #app-form .popin-container {
+            height: 80vh;
+        }
+    }
+    #app-form .popin-container iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #app-form .popin-container .dismiss {
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: inherit;
+        width: 1.5em;
+        height: 1.5em;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        line-height: 1;
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #app-form .popin-container .dismiss:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }

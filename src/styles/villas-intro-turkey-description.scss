@@ -1,1 +1,81 @@
-// villas-intro-turkey-description
+    section.hero.country-intro .intro-text {
+        max-width: 50em;
+        text-align: center;
+        margin: auto;
+    }
+    section.hero.country-intro .intro-text p + p {
+        margin-top: 0.618em;
+    }
+    section.hero.region-select > article .contenu {
+        padding: 0;
+    }
+    section.hero.region-select .country-region-select {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    section.hero.region-select .country-region-select button {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: inherit;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        height: 2.4em;
+        cursor: pointer;
+        background: #f0ab00;
+        border: 0;
+        border-radius: 0.5em;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.5em;
+        padding: 0 1.5em;
+        text-decoration: none;
+        transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+        display: inline-flex;
+        font-size: inherit !important;
+        color: #fff !important;
+        outline: none !important;
+    }
+    section.hero.region-select .country-region-select button:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    section.hero.region-select .country-region-select button:hover {
+        background: #e27300;
+    }
+    section.hero.region-select .country-region-select button.hollow {
+        background: 0 0;
+        border: 2px solid;
+        color: #000 !important;
+    }
+    section.hero.region-select .country-region-select button.hollow:hover {
+        background: 0 0;
+    }
+    section.hero.region-select .country-region-select button.with-down-arrow:after {
+        content: "";
+        width: 0.75em;
+        height: 0.75em;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxOCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMOC41NjM2NCA5TDEgMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==)
+            50% / contain no-repeat;
+        margin-left: 1em;
+    }
+    section.hero.region-select .country-region-select button.with-right-arrow:after {
+        content: "";
+        width: 0.75em;
+        height: 0.75em;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxMSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMS40MjA0MUw5IDkuODU2NzdMMSAxNy40MjA0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K)
+            50% / contain no-repeat;
+        margin-left: 1em;
+    }
+    section.hero.region-select .country-region-select button.selected {
+        pointer-events: none;
+    }
+    section.hero.region-select .country-region-select button:not(.selected) {
+        background: 0 0;
+        box-shadow: inset 0 0 0 2px #000;
+        color: #000 !important;
+    }
+    section.hero.region-select .country-region-select button:first-child:last-child {
+        display: none;
+    }

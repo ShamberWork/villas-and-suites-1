@@ -1,0 +1,438 @@
+    section.hero.hotel-select .videos-descriptions-comp {
+        width: 100%;
+        position: relative;
+    }
+    section.hero.hotel-select .videos-descriptions-comp:before {
+        content: "";
+        padding-top: 58.3942%;
+        display: block;
+    }
+    section.hero.hotel-select .videos-descriptions-comp > * {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp:before {
+            content: none;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt {
+        flex-flow: column;
+        align-items: center;
+        display: flex;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt {
+            width: auto;
+            height: auto;
+            background: 0 0;
+            flex-flow: column-reverse;
+            margin: 0;
+            padding: 0;
+            position: static;
+            top: auto;
+            bottom: auto;
+            left: auto;
+            right: auto;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp {
+        width: 100vw;
+        height: 100%;
+        scroll-snap-type: both mandatory;
+        flex-flow: row;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp {
+            height: 56.25vw;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp::-webkit-scrollbar {
+        display: none;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box {
+        scroll-snap-align: center;
+        height: 100%;
+        flex: 0 0 100%;
+        display: grid;
+        position: relative;
+        overflow: hidden;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box > picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box > picture > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box .vimeo-player {
+        aspect-ratio: 16/9;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        overflow: hidden;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box .vimeo-player.anamorphic {
+        min-height: 135%;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp > .vimeo-video-box .vimeo-player > iframe {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp {
+        width: 50%;
+        height: 100%;
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44), rgba(0, 0, 0, 0.4));
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp {
+            width: 100vw;
+            height: 25em;
+            background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44), rgba(0, 0, 0, 0.4)), url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/decor-bg-mobile.jpg) 50% / cover no-repeat;
+            position: relative;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .progress-indicator {
+        background-color: #000;
+        position: absolute;
+        right: 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .progress-indicator .indicator {
+        background: #f0ab00;
+        transition: left 0.1s, top 0.1s;
+        position: absolute;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: both mandatory;
+        flex-flow: column;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions {
+            flex-flow: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions::-webkit-scrollbar {
+        display: none;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card {
+        width: 100%;
+        color: #fff;
+        opacity: 0;
+        flex-direction: column;
+        flex: 0 0 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5em 2em;
+        transition: opacity 0.5s;
+        display: flex;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > * {
+        max-width: 100%;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card.shown {
+        scroll-snap-align: center;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card.in-view {
+        opacity: 1;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :nth-child(n + 2) {
+        margin-top: 5%;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :first-child,
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :last-child {
+        margin-bottom: auto;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location {
+        align-self: flex-end;
+        align-items: center;
+        line-height: 1;
+        display: inline-flex;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location:before {
+        content: "";
+        height: 1em;
+        width: 0.789474em;
+        background: url(data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2219%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m6.82%2017.577-.002-.003c-.252-.3-.539-.627-.847-.979-.888-1.012-1.957-2.23-2.905-3.605C1.788%2011.14.8%209.103.8%207.068.8%203.623%203.694.801%207.3.801c3.604%200%206.5%202.822%206.5%206.267%200%201.816-.991%203.85-2.282%205.767-1.025%201.523-2.195%202.908-3.109%203.99-.228.271-.44.522-.63.752a.625.625%200%200%201-.959%200Z%22%20stroke%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M10.3%207.158c0%201.608-1.334%202.929-3%202.929-1.667%200-3-1.321-3-2.929%200-1.608%201.333-2.929%203-2.929%201.666%200%203%201.321%203%202.93Z%22%20stroke%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E)
+            50% / contain no-repeat;
+        margin-right: 0.5em;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: inherit;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        height: 2.4em;
+        cursor: pointer;
+        background: 0 0;
+        border: 0;
+        border-radius: 0.5em;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1em;
+        padding: 0 1.5em;
+        font-weight: 300;
+        text-decoration: none;
+        transition: background 0.5s, color 0.5s;
+        display: inline-flex;
+        box-shadow: inset 0 0 0 2px #efd48f;
+        font-size: inherit !important;
+        color: #fff !important;
+        color: #efd48f !important;
+        outline: none !important;
+        font-size: 0.7em !important;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button:active {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button:hover {
+        background: #e27300;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button.hollow {
+        background: 0 0;
+        border: 2px solid;
+        color: #000 !important;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button.hollow:hover {
+        background: 0 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button.with-down-arrow:after {
+        content: "";
+        width: 0.75em;
+        height: 0.75em;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxOCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMOC41NjM2NCA5TDEgMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==)
+            50% / contain no-repeat;
+        margin-left: 1em;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button.with-right-arrow:after {
+        content: "";
+        width: 0.75em;
+        height: 0.75em;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxMSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMS40MjA0MUw5IDkuODU2NzdMMSAxNy40MjA0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K)
+            50% / contain no-repeat;
+        margin-left: 1em;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button.active:before {
+        content: "Скрыть карту";
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button:before {
+        content: "Показать на карте";
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location button:hover {
+        background: 0 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .stars {
+        color: #f0ab00;
+        letter-spacing: 0.3em;
+        font-family: Glyphter;
+        font-weight: 400;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .name {
+        text-align: center;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .msg {
+        font-size: 0.7em;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .price-info {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions > * {
+        margin: 0.5em;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions .about-hotel {
+        background: linear-gradient(45.62deg, #fb7099 0%, #f0ab13 100%);
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions .learn-more,
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions .book-online {
+        background: 0 0;
+        box-shadow: inset 0 0 0 2px #f0ab00;
+        color: #f0ab00 !important;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp {
+        width: 50%;
+        height: 100%;
+        -webkit-backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+        opacity: 0;
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+        background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44), rgba(0, 0, 0, 0.4));
+        transition: opacity 0.5s, -webkit-transform 0.5s, -webkit-transform 0.5s, transform 0.5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp.open {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp.open {
+            max-height: 100vw;
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp {
+            width: 100vw;
+            height: 25em;
+            max-height: 0;
+            background: linear-gradient(179.97deg, rgba(31, 31, 31, 0.44), rgba(0, 0, 0, 0.4)), url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/decor-bg-mobile.jpg) 50% / cover no-repeat;
+            transition: max-height 0.5s;
+            position: relative;
+        }
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp #ymap {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint {
+        pointer-events: none;
+        text-align: center;
+        white-space: nowrap;
+        color: #fff;
+        -webkit-backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(4px);
+        opacity: 0;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 1em;
+        padding: 1em 2em;
+        transition: opacity 0.5s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint.shown {
+        opacity: 1;
+    }
+    section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint .key {
+        border-radius: 0.5em;
+        padding: 0.3em 1em;
+        font-weight: 500;
+        line-height: 1;
+        display: inline-block;
+        box-shadow: inset 0 0 1px 1px;
+    }
+    section.hero.hotel-select .logo-nav-flicker {
+        width: 100%;
+        flex-wrap: nowrap;
+        align-items: stretch;
+        display: flex;
+        margin-top: 0 !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+    }
+    section.hero.hotel-select .logo-nav-flicker::-webkit-scrollbar {
+        display: none;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide {
+        width: 7em;
+        height: 5.6em;
+        flex: 0 0 7em;
+        cursor: pointer;
+        background: #fff;
+        scroll-snap-align: center;
+        transition: background 0.5s;
+        position: relative;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide:before {
+        content: "";
+        padding-top: 80%;
+        display: block;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide > * {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected {
+        cursor: default;
+        background: #000;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected .logo-visual {
+        -webkit-filter: invert(1);
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected .hilite-bar {
+        opacity: 1;
+        width: 100%;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide .logo-visual {
+        background: 50% / contain no-repeat;
+        transition: -webkit-filter 0.5s, -webkit-filter 0.5s, filter 0.5s;
+    }
+    section.hero.hotel-select .logo-nav-flicker .logo-slide .hilite-bar {
+        height: 4px;
+        opacity: 0;
+        width: 0;
+        background: linear-gradient(45.62deg, #fb7099 0%, #f0ab13 100%);
+        transition: opacity 0.5s, width 0.5s;
+        top: auto;
+        bottom: 0;
+    }
