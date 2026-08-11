@@ -1,9 +1,9 @@
-import {countryFromSlide} from "./hotels-list/countryFromSlide.js"
-import {createContext, stateKey} from "./hotels-list/keys.js"
-import {markerParts} from "./hotels-list/markerParts.js"
-import {schedule} from "./hotels-list/schedule.js"
-import {selectHotel, visibleHotelNodes} from "./hotels-list/selectHotel.js"
-import {syncContent} from "./hotels-list/syncContent.js"
+import {countryFromSlide} from "./sub-scipts/hotels-list/countryFromSlide.js"
+import {createContext, stateKey} from "./sub-scipts/hotels-list/keys.js"
+import {markerParts} from "./sub-scipts/hotels-list/markerParts.js"
+import {schedule} from "./sub-scipts/hotels-list/schedule.js"
+import {selectHotel, visibleHotelNodes} from "./sub-scipts/hotels-list/selectHotel.js"
+import {syncContent} from "./sub-scipts/hotels-list/syncContent.js"
 
 export default function init(container = document) {
     return schedule(() => {
