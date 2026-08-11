@@ -73,6 +73,16 @@ export default function init(container = document) {
             selectHotel(context, logos.indexOf(logo))
         })
 
+        const selectAdjacentHotel = (direction) => {
+            const {cards} = visibleHotelNodes(context)
+            if (!cards.length) return
+            const selectedIndex = Math.max(0, cards.findIndex((card) => card.dataset.hotelKey === state.hotelKey))
+            selectHotel(context, (selectedIndex + direction + cards.length) % cards.length)
+        }
+
+        listen(root.querySelector(".hotel-carousel-button--prev"), "click", () => selectAdjacentHotel(-1))
+        listen(root.querySelector(".hotel-carousel-button--next"), "click", () => selectAdjacentHotel(1))
+
         let descriptionsScrollTimer
         let videosScrollTimer
         const selectFromScroll = (source, horizontal) => {

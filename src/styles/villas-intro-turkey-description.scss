@@ -1,3 +1,6 @@
+    section.hero.country-intro > article > .contenu {
+        padding-bottom: 80px;
+    }
     section.hero.country-intro .intro-text {
         max-width: 50em;
         text-align: center;
@@ -7,7 +10,7 @@
         margin-top: 0.618em;
     }
     section.hero.region-select > article .contenu {
-        padding: 0;
+        padding: 0 0 80px;
     }
     section.hero.region-select .country-region-select {
         flex-wrap: wrap;

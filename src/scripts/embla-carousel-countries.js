@@ -7,20 +7,19 @@ export default function init(container = document) {
     if (!root || root.dataset.emblaInitialized === 'true') return
 
     const viewportNode = root.querySelector('.embla__viewport')
-    const prevBtn = root.querySelector('.embla__btn--prev')
-    const nextBtn = root.querySelector('.embla__btn--next')
     const dotsContainer = root.querySelector('.embla__pagination')
-    if (!viewportNode || !prevBtn || !nextBtn || !dotsContainer) return
+    const prevButton = root.querySelector('.embla__button--prev')
+    const nextButton = root.querySelector('.embla__button--next')
+    if (!viewportNode || !dotsContainer) return
 
     root.dataset.emblaInitialized = 'true'
 
-    const options = {
+    const emblaApi = EmblaCarousel(viewportNode, {
         loop: true,
         align: 'center',
+        startIndex: 1,
         skipSnaps: false
-    }
-
-    const emblaApi = EmblaCarousel(viewportNode, options)
+    })
 
     let dotNodes = []
 
@@ -60,17 +59,15 @@ export default function init(container = document) {
     emblaApi.on('reInit', setupDots)
     emblaApi.on('reInit', updateActiveState)
 
-    const scrollPrev = () => emblaApi.scrollPrev()
-    const scrollNext = () => emblaApi.scrollNext()
+    prevButton?.addEventListener('click', emblaApi.scrollPrev)
+    nextButton?.addEventListener('click', emblaApi.scrollNext)
 
-    prevBtn.addEventListener('click', scrollPrev)
-    nextBtn.addEventListener('click', scrollNext)
     setupDots()
     updateActiveState()
 
     return () => {
-        prevBtn.removeEventListener('click', scrollPrev)
-        nextBtn.removeEventListener('click', scrollNext)
+        prevButton?.removeEventListener('click', emblaApi.scrollPrev)
+        nextButton?.removeEventListener('click', emblaApi.scrollNext)
         emblaApi.destroy()
         delete root.dataset.emblaInitialized
     }

@@ -1,0 +1,466 @@
+<style>
+section.hero.hotel-select{width:100vw;max-width:none!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important}section.hero.hotel-select>article{width:100%;max-width:none!important;margin:0!important}section.hero.hotel-select>article>.contenu{width:100%;max-width:none;padding:0!important}section.hero.hotel-select .videos-descriptions-comp{aspect-ratio:12/5;width:100%;position:relative}section.hero.hotel-select .videos-descriptions-comp:before{content:none}section.hero.hotel-select .videos-descriptions-comp>*{width:100%;height:100%;position:absolute;top:0;left:0}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp{aspect-ratio:auto}section.hero.hotel-select .videos-descriptions-comp:before{content:none}}section.hero.hotel-select .videos-descriptions-comp .inhalt{flex-flow:column;align-items:center;display:flex}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp .inhalt{background:0 0;flex-flow:column-reverse;width:auto;height:auto;margin:0;padding:0;position:static;inset:auto;transform:none}}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp{scroll-snap-type:both mandatory;flex-flow:row;width:100%;height:100%;display:flex;overflow:auto hidden}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp{height:50vw}}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp::-webkit-scrollbar{display:none}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box{scroll-snap-align:center;flex:0 0 100%;height:100%;display:grid;position:relative;overflow:hidden}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box>picture{object-fit:cover;object-position:center;width:100%;height:100%;position:absolute;top:0;left:0}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box>picture>img{object-fit:cover;width:100%;height:100%;position:absolute;top:0;left:0}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box .vimeo-player{aspect-ratio:16/9;place-self:center;width:auto;min-width:100%;height:auto;min-height:100%;position:relative;overflow:hidden}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box .vimeo-player.anamorphic{min-height:135%}section.hero.hotel-select .videos-descriptions-comp .inhalt .videos-comp>.vimeo-video-box .vimeo-player>iframe{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp{-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background:linear-gradient(179.97deg,#1f1f1f70,#0006);width:37.963%;height:100%;position:absolute;top:0;right:max(0px,50% - 668px)}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp{background:linear-gradient(179.97deg,#1f1f1f70,#0006),url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/decor-bg-mobile.jpg) 50%/cover no-repeat;width:100vw;height:min(500px,69.4444vw);position:relative}}section.hero.hotel-select .hotel-carousel-controls{z-index:6;pointer-events:none;justify-content:space-between;align-items:center;width:min(1336px,100% - 60px);height:112px;display:flex;position:absolute;top:100%;left:50%;transform:translate(-50%)}section.hero.hotel-select .hotel-carousel-button{pointer-events:auto;cursor:pointer;background:0 0;border:0;width:12px;height:24px;padding:0;transition:opacity .2s;position:relative;overflow:visible}section.hero.hotel-select .hotel-carousel-button:hover{opacity:.65}section.hero.hotel-select .hotel-carousel-button:active{opacity:.45}section.hero.hotel-select .hotel-carousel-button:focus-visible{outline:2px solid var(--coral-main-blue,#0093d0);outline-offset:4px}section.hero.hotel-select .hotel-carousel-button__icon{pointer-events:none;width:100%;max-width:none;height:100%;display:block;position:absolute;inset:0}section.hero.hotel-select .hotel-carousel-button--prev .hotel-carousel-button__icon{transform:rotate(180deg)}section.hero.hotel-select .hotel-carousel-button--next .hotel-carousel-button__icon{transform:none}@media screen and (width<=768px){section.hero.hotel-select .hotel-carousel-controls{width:min(660px,91.6667vw);height:min(112px,15.5556vw)}section.hero.hotel-select .hotel-carousel-button{width:min(16px,2.22222vw);height:min(32px,4.44444vw)}}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .progress-indicator{background-color:#000;position:absolute;right:0}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .progress-indicator .indicator{background:#f0ab00;transition:left .1s,top .1s;position:absolute}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions{scroll-snap-type:both mandatory;flex-flow:column;width:100%;height:100%;display:flex;position:absolute;top:0;left:0;overflow:hidden auto}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions{flex-flow:row;overflow:auto hidden}}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions::-webkit-scrollbar{display:none}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card{color:#fff;opacity:0;flex-direction:column;flex:0 0 100%;justify-content:center;align-items:center;width:100%;padding:1.5em 2em;transition:opacity .5s;display:flex}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card>*{max-width:100%}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card.shown{scroll-snap-align:center}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card.in-view{opacity:1}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card>:nth-child(n+2){margin-top:5%}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card>:first-child,section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card>:last-child{margin-bottom:auto}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location{align-self:flex-end;align-items:center;line-height:1;display:inline-flex}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location:before{content:"";background:url(data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2219%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m6.82%2017.577-.002-.003c-.252-.3-.539-.627-.847-.979-.888-1.012-1.957-2.23-2.905-3.605C1.788%2011.14.8%209.103.8%207.068.8%203.623%203.694.801%207.3.801c3.604%200%206.5%202.822%206.5%206.267%200%201.816-.991%203.85-2.282%205.767-1.025%201.523-2.195%202.908-3.109%203.99-.228.271-.44.522-.63.752a.625.625%200%200%201-.959%200Z%22%20stroke%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M10.3%207.158c0%201.608-1.334%202.929-3%202.929-1.667%200-3-1.321-3-2.929%200-1.608%201.333-2.929%203-2.929%201.666%200%203%201.321%203%202.93Z%22%20stroke%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E) 50%/contain no-repeat;width:.789474em;height:1em;margin-right:.5em}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button{font-family:inherit;font-weight:500;line-height:inherit;-webkit-user-select:none;user-select:none;cursor:pointer;background:0 0;border:0;border-radius:.5em;justify-content:center;align-items:center;height:2.4em;margin-left:1em;padding:0 1.5em;font-weight:300;text-decoration:none;transition:background .5s,color .5s;display:inline-flex;box-shadow:inset 0 0 0 2px #efd48f;font-size:inherit!important;color:#efd48f!important;outline:none!important;font-size:.7em!important}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button:active{transform:translateY(2px)}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button.hollow{background:0 0;border:2px solid;color:#000!important}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button.hollow:hover{background:0 0}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button.with-down-arrow:after{content:"";background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxOCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDFMOC41NjM2NCA5TDEgMSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+Cg==) 50%/contain no-repeat;width:.75em;height:.75em;margin-left:1em}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button.with-right-arrow:after{content:"";background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxMSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMS40MjA0MUw5IDkuODU2NzdMMSAxNy40MjA0IiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K) 50%/contain no-repeat;width:.75em;height:.75em;margin-left:1em}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button.active:before{content:"Скрыть карту"}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button:before{content:"Показать на карте"}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .location button:hover{background:0 0}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .stars{color:#f0ab00;letter-spacing:.3em;font-family:Glyphter;font-weight:400}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .name{text-align:center;font-size:2em;font-weight:700;line-height:1.1}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .msg{font-size:.7em}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .price-info{font-size:2em;font-weight:700}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .actions{flex-wrap:wrap;justify-content:center;display:flex}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .actions>*{margin:.5em}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .actions .about-hotel{background:linear-gradient(45.62deg,#fb7099 0%,#f0ab13 100%)}section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .actions .learn-more,section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions>.hotel-card .actions .book-online{background:0 0;box-shadow:inset 0 0 0 2px #f0ab00;color:#f0ab00!important}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp{-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);opacity:0;transform-origin:100% 0;background:linear-gradient(179.97deg,#1f1f1f70,#0006);width:50%;height:100%;transition:opacity .5s,transform .5s;position:absolute;top:0;left:0;transform:scaleX(0)}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp.open{opacity:1;transform:none}@media screen and (width<=768px){section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp.open{max-height:100vw}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp{background:linear-gradient(179.97deg,#1f1f1f70,#0006),url(https://cdn.coral.ru/content/cms/russia/villas-and-suites/decor-bg-mobile.jpg) 50%/cover no-repeat;width:100vw;height:min(500px,69.4444vw);max-height:0;transition:max-height .5s;position:relative}}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp #ymap{width:100%;height:100%;font-size:0;position:absolute;top:0;left:0}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint{pointer-events:none;text-align:center;white-space:nowrap;color:#fff;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);opacity:0;background:#000c;border-radius:1em;padding:1em 2em;transition:opacity .5s;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);box-shadow:0 2px 8px #0003}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint.shown{opacity:1}section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp .scrollzoom-hint .key{border-radius:.5em;padding:.3em 1em;font-weight:500;line-height:1;display:inline-block;box-shadow:inset 0 0 1px 1px}section.hero.hotel-select .logo-nav-flicker{scroll-snap-type:x mandatory;scrollbar-width:none;flex-wrap:nowrap;align-items:center;gap:40px;width:min(1229px,100% - 168px);height:112px;display:flex;overflow:auto hidden;margin:0 auto!important}section.hero.hotel-select .logo-nav-flicker::-webkit-scrollbar{display:none}section.hero.hotel-select .logo-nav-flicker .logo-slide{cursor:pointer;scroll-snap-align:center;background:#fff;flex:0 0 153.985px;width:153.985px;height:112px;transition:background .5s;position:relative}section.hero.hotel-select .logo-nav-flicker .logo-slide:before{content:"";padding-top:80%;display:block}section.hero.hotel-select .logo-nav-flicker .logo-slide>*{width:100%;height:100%;position:absolute;top:0;left:0}section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected{cursor:default;background:#fff}section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected .logo-visual{filter:none}section.hero.hotel-select .logo-nav-flicker .logo-slide.is-selected .hilite-bar{opacity:1;width:100%}section.hero.hotel-select .logo-nav-flicker .logo-slide .logo-visual{background:50%/contain no-repeat;transition:filter .5s}section.hero.hotel-select .logo-nav-flicker .logo-slide .hilite-bar{opacity:0;background:linear-gradient(45.62deg,#fb7099 0%,#f0ab13 100%);width:0;height:4px;transition:opacity .5s,width .5s;top:auto;bottom:0}@media screen and (width<=768px){section.hero.hotel-select .logo-nav-flicker{gap:min(40px,5.55556vw);width:min(544px,75.5556vw);height:min(112px,15.5556vw)}section.hero.hotel-select .logo-nav-flicker .logo-slide{flex-basis:min(140px,19.4444vw);width:min(140px,19.4444vw);height:100%}}
+</style>
+
+<section class="hero hotel-select">
+    <article>
+        <div class="contenu">
+            <div class="videos-descriptions-comp">
+                <div class="inhalt">
+                    <div class="videos-comp">
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ela-excellence/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ela-excellence/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="846293166"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/maxx-royal/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/maxx-royal/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="723670109"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/susesi-luxury/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/susesi-luxury/poster-frame.jpg">
+                            </picture>
+                            <div class="anamorphic vimeo-player" data-vimeo-vid="776227411"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/kempinski-villas-belek/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/kempinski-villas-belek/poster-frame.jpg">
+                            </picture>
+                            <div class="anamorphic vimeo-player" data-vimeo-vid="778055603"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-golf-resort/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-golf-resort/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="776226407"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-serenity-resort/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-serenity-resort/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="776227754"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-verde-resort/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-verde-resort/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="776228098"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-diamond/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-diamond/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="781011105"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-azure/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-azure/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="781480600"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/voyage-belek-golf/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/voyage-belek-golf/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bayou-villas/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bayou-villas/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="784348182"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ng-phaselis-bay/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ng-phaselis-bay/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/spice-hotel/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/spice-hotel/poster-frame.jpg">
+                            </picture>
+                            <div class="anamorphic vimeo-player" data-vimeo-vid="789966315"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.antalia">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bellis-deluxe/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bellis-deluxe/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="789966839"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/lujo/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/lujo/poster-frame.jpg">
+                            </picture>
+                            <div class="anamorphic vimeo-player" data-vimeo-vid="781010856"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/d-maris-bay/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/d-maris-bay/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="789967316"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/be-premium/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/be-premium/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="832551110"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mandarin-oriental/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mandarin-oriental/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="832551585"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/caresse-resort/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/caresse-resort/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="845205523"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="turkey.aegean">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mett-hotel/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mett-hotel/poster-frame.jpg">
+                            </picture>
+                            <div class="vimeo-player" data-vimeo-vid="845205523"> <br></div>
+                        </div>
+                        <div class="vimeo-video-box" data-content-marker="egypt">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="https://cdn.coral.ru/content/cms/russia/villas-and-suites/egypt/hotels/rixos-premium-magawish/poster-frame-x720.jpg"> <img src="https://cdn.coral.ru/content/cms/russia/villas-and-suites/egypt/hotels/rixos-premium-magawish/poster-frame.jpg">
+                            </picture>
+                            <div class="anamorphic vimeo-player" data-vimeo-vid="803785010"> <br></div>
+                        </div>
+                    </div>
+                    <div class="ymap-comp">
+                        <div id="ymap"> <br></div>
+                        <div class="scrollzoom-hint">Нажмите и удеживайте клавишу <span class="key">Alt</span>, <br>чтобы менять масштаб колесом прокрутки</div>
+                    </div>
+                    <div class="descriptions-comp">
+                        <div class="progress-indicator">
+                            <div class="indicator"> <br></div>
+                            <br>
+                        </div>
+                        <div class="descriptions">
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="ElaExcellence">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Ela Excellence Resort Belek</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./ela-excellence/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="MaxxRoyalKemerResort">
+                                <div class="location">Кемер<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Maxx Royal Kemer Resort</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./maxx-royal-kemer-resort/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/maxx-royal-kemer-resort-kemer/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="SusesiLuxuryResortDeluxe">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Susesi Luxury Resort 5* Deluxe</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./susesi-luxury-resort-deluxe/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/susesi-luxury-resort-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="KempinskiVillasBelek">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Kempinski Hotel The Dome Belek</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./kempinski-villas-belek/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/kempinski-hotel-the-dome-belek-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="GloriaGolfResort">
+                                <div class="location">Кемер<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Gloria Golf Resort 5* Deluxe</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./gloria-golf-resort/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/gloria-golf-resort-belek/?qp=gEIDPqjHDS6F9wLPRxSMEpvgmDdQ3qhBg8IY9wE6fZkjDoCFnI0pNnYmhR5ccPnzEmnh9PXWUXnNkfRngnn3CpOuQG6v93sKQWeYwpV8xPM90xKZ3vLtxejAUaSCXfmn%2bOCDIoYYdv3T4X87TdJWgFvHYgcvbsibXEfbld3YBpBca21uL0BeZncJ2bPt9gfp7c%2bS3EXaz6XQ8DUrrPMuq1VBPbd7Ph7SOMbY5H0bWeTIJ3dtmOhPw%2fgF0w50W1S03M2gRLkqLCkn1wk9RSO44qAHZU8cbQx6wQtz8JK9gNzs4GCAtOSj%2fTBzeyzrXBo9e93slPeUBT6yUcxQ3f9O%2b6%2bWgKSlfGrzILT2aDghgfA%3d&amp;p=1&amp;w=0&amp;s=0" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="GloriaSerenityResort">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Gloria Serenity Resort 5* Deluxe</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./gloria-serenity-resort/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/gloria-serenity-resort-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="GloriaVerdeResort">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Gloria Verde Resort 5*</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./gloria-verde-resort/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/gloria-verde-resort-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="CorneliaDiamond">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Cornelia Diamond Golf Resort &amp; Spa</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./cornelia-diamond/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/cornelia-diamond-golf-resort-spa-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="CorneliaAzure">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Cornelia Azure Villas</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./cornelia-azure/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="VoyageBelekGolf">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Voyage Belek Golf &amp; SPA</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./voyage-belek-golf/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/voyage-belek-golf-spa-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="BayouVillas">
+                                <div class="location">Анталья<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Bayou Villas</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./bayou-villas/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/bayou-villas-lara-antalya-antalya/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="NGPhaselisBay">
+                                <div class="location">Кемер<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">NG Phaselis Bay</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./ng-phaselis-bay/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/ng-phaselis-bay-kemer/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="SpiceHotel">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Spice Hotel &amp; SPA</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./spice-hotel/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/spice-hotel-spa-belek/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.antalia" data-hotel-key="BellisDeluxe">
+                                <div class="location">Белек<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Bellis Deluxe</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./bellis-deluxe/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="Lujo">
+                                <div class="location">Бодрум<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Lujo Hotel</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./lujo/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/turkey/lujo-hotel-bodrum-bodrum/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="DMarisBay">
+                                <div class="location">Мармарис<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">D Maris Bay</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./d-maris-bay/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="BePremium">
+                                <div class="location">Бодрум<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Be Premium Bodrum</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./be-premium/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="Mandarin">
+                                <div class="location">Бодрум<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Mandarin Oriental</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./mandarin-oriental/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="Caresse">
+                                <div class="location">Бодрум<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Caresse, a Luxury Collection Resort &amp; Spa</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./caresse-resort/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="turkey.aegean" data-hotel-key="Mett">
+                                <div class="location">Бодрум<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Mett Hotel &amp; Beach Resort Bodrum</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./mett-hotel/">Подробнее об отеле</a><a class="learn-more" href="#learn-more">Узнать больше</a></div>
+                                <div> <br></div>
+                            </div>
+                            <div class="hotel-card" data-content-marker="egypt" data-hotel-key="RixosPremiumMagawish">
+                                <div class="location">Хургада<button data-action="ymap-toggle">‍</button></div>
+                                <div class="stars">*****</div>
+                                <div class="name">Rixos Premium Magawish</div>
+                                <div class="msg">Уточните стоимость виллы удобным способом</div>
+                                <div class="actions"><a class="about-hotel" href="./rixos-premium-magawish/">Подробнее об отеле</a> <a class="book-online" href="https://www.coral.ru/hotels/egypt/rixos-premium-magawish-hurghada/" target="_blank" rel="noopener"> Забронировать онлайн </a></div>
+                                <div> <br></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hotel-carousel-controls" aria-label="Переключение отелей">
+                        <button class="hotel-carousel-button hotel-carousel-button--prev" type="button" aria-label="Предыдущий отель">
+                            <img class="hotel-carousel-button__icon" src="https://b2ccdn.coral.ru/content/landing-pages/villas-and-suites-1/hotel-carousel-chevron.svg" alt="">
+                        </button>
+                        <button class="hotel-carousel-button hotel-carousel-button--next" type="button" aria-label="Следующий отель">
+                            <img class="hotel-carousel-button__icon" src="https://b2ccdn.coral.ru/content/landing-pages/villas-and-suites-1/hotel-carousel-chevron.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-nav-flicker">
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="ElaExcellence">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ela-excellence/logo-ela-excellence.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="MaxxRoyalKemerResort">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/maxx-royal/logo-maxx-royal.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="SusesiLuxuryResortDeluxe">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/susesi-luxury/logo-susesi-luxury.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="KempinskiVillasBelek">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/kempinski-villas-belek/logo-kempinski-hotel-the-dome.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="GloriaGolfResort">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-golf-resort/logo-gloria-golf.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="GloriaSerenityResort">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-serenity-resort/logo-gloria-serenity.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="GloriaVerdeResort">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/gloria-verde-resort/logo-gloria-verde.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="CorneliaDiamond">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-diamond/logo-cornelia-diamond.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="CorneliaAzure">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/cornelia-azure/logo-cornelia-azure.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="VoyageBelekGolf">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/voyage-belek-golf/logo-voyage-belek-golf.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="BayouVillas">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bayou-villas/logo-bayou-villas.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="NGPhaselisBay">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/ng-phaselis-bay/logo-ng-phaselis-bay.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="SpiceHotel">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/spice-hotel/logo-spice-hotel.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.antalia" data-hotel-key="BellisDeluxe">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/bellis-deluxe/logo-bellis-deluxe.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="Lujo">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/lujo/logo-lujo.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="DMarisBay">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/d-maris-bay/logo-d-maris-bay.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="BePremium">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/be-premium/logo-be-premium.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="Mandarin">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mandarin-oriental/logo-mandarin-oriental.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="Caresse">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/caresse-resort/logo-caresse-resort.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="turkey.aegean" data-hotel-key="Mett">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/turkey/hotels/mett-hotel/logo-mett-hotel.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <div class="logo-slide" data-content-marker="egypt" data-hotel-key="RixosPremiumMagawish">
+                    <div class="logo-visual" style="background-image: url('https://cdn.coral.ru/content/cms/russia/villas-and-suites/egypt/hotels/rixos-premium-magawish/logo-rixos.png');"> <br></div>
+                    <div class="hilite-bar"> <br></div>
+                    <br>
+                </div>
+                <br>
+            </div>
+        </div>
+    </article>
+</section>
+<div id="learn-more"><a href="#_">‍</a>
+    <div class="popin-container"><a class="dismiss" href="#_">‍</a>
+        <div class="body">
+            <h4>Чтобы выбрать виллу и узнать её стоимость, забронировать или уточнить детали:</h4>
+            <div class="callcenter token"> <br></div>
+            <h4>Позвоните в call-центр</h4>
+            <a class="phome-number" href="tel:+74959701202">+7 495 970-12-02</a>
+            <div class="eliteservice-marker token"> <br></div>
+            <div class="eliteservice-banner">ELITE SERVICE</div>
+            <h4>Приезжайте в ближайший офис</h4>
+            <p>Офисы в Москве и регионах <a href="https://www.coral.ru/where-to-buy/?coral_elite_service=1&amp;elite" target="_blank" rel="noopener">Coral Elite Service</a></p>
+        </div>
+        <div class="foot">
+            <h4>Напишите в чат</h4>
+            <div class="contact-us">
+                <div class="lefty">
+                    <h5>Ответим через 1 минуту</h5>
+                    <p>с 9:00 до 21:00</p>
+                </div>
+                <div class="launchpad"><a class="whatsapp" href="https://wa.me/74959701202?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!" target="_blank" rel="noopener">‍</a><a class="vk" href="https://vk.me/coraltravel" target="_blank" rel="noopener">‍</a> <a class="telegram" href="https://t.me/coraltravel_telegrambot" target="_blank" rel="noopener">‍</a> <a class="msg" href="https://bcrw.apple.com/urn:biz:d3809fd0-e2fe-4027-b27e-ae34bf28e38c" target="_blank" rel="noopener">‍</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+(function(){function e(e){let t=e.querySelector(`.embla__slide__title`)?.textContent?.trim().toLocaleLowerCase(`ru-RU`);return t===`турция`?`turkey`:t===`египет`?`egypt`:``}function t(e){let[t,n]=e.split(`.`);return{country:t,region:n}}var n=`__villasAndSuitesState`;function r(n=document){let r=n.matches?.(`#monkey-app`)?n:n.querySelector?.(`#monkey-app`)||document.querySelector(`#monkey-app`)||n;if(!r?.querySelectorAll)return null;let i=[...r.querySelectorAll(`.embla-carousel .embla__slide`)],a=[...r.querySelectorAll(`section.region-select [data-content-control]`)],o=[...r.querySelectorAll(`[data-content-marker]`)],s=r.querySelector(`.videos-comp`),c=r.querySelector(`.descriptions`),l=r.querySelector(`.logo-nav-flicker`),u=new URLSearchParams(window.location.search).get(`hotel`),d=u?[...r.querySelectorAll(`.hotel-card[data-hotel-key]`)].find(e=>e.dataset.hotelKey===u):null,f=d?.dataset.contentMarker||``,p=f?t(f):null,m=i.find(e=>e.classList.contains(`is-active`))||i[0],h=m?e(m):``,g=p?.country||h||`turkey`,_=a.find(e=>e.dataset.contentControl.startsWith(`${g}.`)&&e.classList.contains(`selected`))||a.find(e=>e.dataset.contentControl.startsWith(`${g}.`));return{root:r,countryItems:i,regionButtons:a,markerNodes:o,videosContainer:s,descriptionsContainer:c,logoContainer:l,state:{country:g,region:p?.region||_?.dataset.contentControl.split(`.`)[1]||``,hotelKey:d?.dataset.hotelKey||``}}}function i(e){let t,n,r=()=>{t=e()};return document.readyState===`loading`?document.addEventListener(`DOMContentLoaded`,r,{once:!0}):n=window.setTimeout(r,0),()=>{document.removeEventListener(`DOMContentLoaded`,r),window.clearTimeout(n),t?.()}}function a(e,t,n,r){if(!e)return;let i=n?e.clientWidth:e.clientHeight,a=n?e.scrollLeft:e.scrollTop,o=t*i;!i||Math.abs(a-o)<1||e.scrollTo(n?{left:o,behavior:r}:{top:o,behavior:r})}function o(e,t,n){let r=e.root.querySelector(`.descriptions-comp .progress-indicator`),i=r?.querySelector(`.indicator`);if(!r||!i||n<2){r&&(r.hidden=!0);return}let a=window.matchMedia(`(max-width: 768px)`).matches;r.hidden=!1,r.style.top=a?`auto`:`0`,r.style.right=`0`,r.style.bottom=`0`,r.style.left=a?`0`:`auto`,r.style.width=a?`100%`:`4px`,r.style.height=a?`4px`:`100%`,i.style.width=a?`${100/n}%`:`100%`,i.style.height=a?`100%`:`${100/n}%`,i.style.left=a?`${t*100/n}%`:`0`,i.style.top=a?`0`:`${t*100/n}%`}function s(e){return e.state.region?`${e.state.country}.${e.state.region}`:e.state.country}function c(e){let t=s(e);return{cards:[...e.root.querySelectorAll(`.hotel-card[data-content-marker="${t}"]`)],logos:[...e.root.querySelectorAll(`.logo-slide[data-content-marker="${t}"]`)],videos:[...e.root.querySelectorAll(`.videos-comp > .vimeo-video-box[data-content-marker="${t}"]`)]}}function l(e,t,n={}){let{root:r,state:i,videosContainer:s,descriptionsContainer:l,logoContainer:u}=e,{cards:d,logos:f,videos:p}=c(e);if(!d.length)return;let{source:m=null,scroll:h=!0,behavior:g=`smooth`}=n,_=Math.max(0,Math.min(t,d.length-1));if(i.hotelKey=d[_].dataset.hotelKey||``,r.querySelectorAll(`.hotel-card.in-view`).forEach(e=>e.classList.remove(`in-view`)),r.querySelectorAll(`.logo-slide`).forEach(e=>{e.classList.remove(`is-selected`),e.setAttribute(`aria-current`,`false`)}),r.querySelectorAll(`.videos-comp > .vimeo-video-box.is-active`).forEach(e=>e.classList.remove(`is-active`)),d[_].classList.add(`in-view`),f[_]?.classList.add(`is-selected`),f[_]?.setAttribute(`aria-current`,`true`),p[_]?.classList.add(`is-active`),o(e,_,d.length),!h)return;let v=window.matchMedia(`(max-width: 768px)`).matches;m!==s&&a(s,_,!0,g),m!==l&&a(l,_,v,g);let y=f[_];if(y&&u){let e=y.offsetLeft-(u.clientWidth-y.clientWidth)/2;Math.abs(u.scrollLeft-e)>=1&&u.scrollTo({left:Math.max(0,e),behavior:g})}}function u(t,n=!0,r=!0,i=`smooth`){let{countryItems:a,markerNodes:o,regionButtons:s,state:u}=t,d=u.region?`${u.country}.${u.region}`:u.country;a.forEach(t=>{let n=e(t)===u.country;t.setAttribute(`aria-current`,n?`true`:`false`)}),s.forEach(e=>{let t=e.dataset.contentControl===d;e.classList.toggle(`selected`,t),e.setAttribute(`aria-pressed`,t?`true`:`false`)}),o.forEach(e=>{let t=e.dataset.contentMarker||``,n=t.includes(`.`)?t===d:t===u.country;e.classList.toggle(`shown`,n)});let{cards:f}=c(t);l(t,n?0:Math.max(0,f.findIndex(e=>e.dataset.hotelKey===u.hotelKey)),{scroll:r,behavior:i})}function d(a=document){return i(()=>{let i=r(a);if(!i)return;let{root:o,state:s,countryItems:d,regionButtons:f,videosContainer:p,descriptionsContainer:m,logoContainer:h}=i;if(!d.length||!p||!m||!h)return;o[n]?.destroy?.();let g=[],_=(e,t,n,r)=>{e&&(e.addEventListener(t,n,r),g.push(()=>e.removeEventListener(t,n,r)))},v=new MutationObserver(()=>{let t=d.find(e=>e.classList.contains(`is-active`)),n=t?e(t):``;if(!n||n===s.country)return;let r=f.find(e=>e.dataset.contentControl.startsWith(`${n}.`));s.country=n,s.region=r?.dataset.contentControl.split(`.`)[1]||``,u(i)});d.forEach(e=>v.observe(e,{attributes:!0,attributeFilter:[`class`]})),f.forEach(e=>{_(e,`click`,()=>{let{country:n,region:r}=t(e.dataset.contentControl);s.country=n,s.region=r,u(i)})}),_(h,`click`,e=>{let t=e.target instanceof Element?e.target.closest(`.logo-slide.shown`):null;if(!t)return;let{logos:n}=c(i);l(i,n.indexOf(t))}),h.querySelectorAll(`.logo-slide`).forEach(e=>{e.setAttribute(`role`,`button`),e.setAttribute(`tabindex`,`0`)}),_(h,`keydown`,e=>{if(e.key!==`Enter`&&e.key!==` `)return;let t=e.target instanceof Element?e.target.closest(`.logo-slide.shown`):null;if(!t)return;e.preventDefault();let{logos:n}=c(i);l(i,n.indexOf(t))});let y=e=>{let{cards:t}=c(i);if(!t.length)return;let n=Math.max(0,t.findIndex(e=>e.dataset.hotelKey===s.hotelKey));l(i,(n+e+t.length)%t.length)};_(o.querySelector(`.hotel-carousel-button--prev`),`click`,()=>y(-1)),_(o.querySelector(`.hotel-carousel-button--next`),`click`,()=>y(1));let b,x,S=(e,t)=>{let n=e===p?x:b;window.clearTimeout(n);let r=window.setTimeout(()=>{let n=t?e.scrollLeft:e.scrollTop,r=t?e.clientWidth:e.clientHeight;r&&l(i,Math.round(n/r),{source:e})},120);e===p?x=r:b=r};_(m,`scroll`,()=>{S(m,window.matchMedia(`(max-width: 768px)`).matches)},{passive:!0}),_(p,`scroll`,()=>S(p,!0),{passive:!0});let C;_(window,`resize`,()=>{window.clearTimeout(C),C=window.setTimeout(()=>{let{cards:e}=c(i),t=Math.max(0,e.findIndex(e=>e.dataset.hotelKey===s.hotelKey));l(i,t,{behavior:`auto`})},120)}),_(o,`click`,e=>{let t=e.target instanceof Element?e.target.closest(`[data-action='ymap-toggle']`):null;if(!t)return;let n=t.closest(`.hotel-card`),r=n?.querySelector(`.name`)?.textContent?.trim()||``,i=n?.querySelector(`.location`)?.childNodes[0]?.textContent?.trim()||``,a=encodeURIComponent([r,i].filter(Boolean).join(` `));window.open(`https://yandex.ru/maps/?text=${a}`,`_blank`,`noopener,noreferrer`)});let w,T=()=>{v.disconnect(),g.splice(0).forEach(e=>e()),window.clearTimeout(b),window.clearTimeout(x),window.clearTimeout(C),o.__villasAndSuitesState===w&&(delete o[n],delete o.dataset.priceHotelsInitialized)};return w={state:s,destroy:T},o[n]=w,o.dataset.priceHotelsInitialized=`true`,u(i,!1,!0,`auto`),T})}try{typeof d==`function`&&d()}catch(e){console.warn(e)}})();
+</script>
