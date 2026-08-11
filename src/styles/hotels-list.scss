@@ -378,6 +378,63 @@
         box-shadow: inset 0 0 0 2px #f0ab00;
         color: #f0ab00 !important;
     }
+    @media screen and (max-width: 768px) {
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card {
+            box-sizing: border-box;
+            justify-content: flex-start;
+            padding: 0 min(10px, 1.388889vw) min(32px, 4.444444vw);
+            position: relative;
+            overflow: hidden;
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :nth-child(n + 2) {
+            margin-top: 0;
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :first-child,
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card > :last-child {
+            margin-bottom: 0;
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .location {
+            z-index: 1;
+            align-self: auto;
+            font-size: min(20px, 2.777778vw);
+            line-height: min(24px, 3.333333vw);
+            position: absolute;
+            top: min(30px, 4.166667vw);
+            left: min(30px, 4.166667vw);
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .stars {
+            margin-top: min(122px, 16.944444vw);
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .name {
+            width: min(569px, 79.027778vw);
+            margin-top: min(40px, 5.555556vw);
+            font-size: min(48px, 6.666667vw);
+            line-height: min(52px, 7.222222vw);
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .msg {
+            margin-top: min(24px, 3.333333vw);
+            font-size: min(24px, 3.333333vw);
+            line-height: min(32px, 4.444444vw);
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .price-info {
+            margin-top: min(40px, 5.555556vw);
+            font-size: min(44px, 6.111111vw);
+            line-height: normal;
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions {
+            flex-wrap: nowrap;
+            gap: min(32px, 4.444444vw);
+            margin-top: min(40px, 5.555556vw);
+        }
+        section.hero.hotel-select .videos-descriptions-comp .inhalt .descriptions-comp .descriptions > .hotel-card .actions > * {
+            height: min(60px, 8.333333vw);
+            flex: 0 0 auto;
+            margin: 0;
+            padding: 0 min(32px, 4.444444vw);
+            border-radius: min(8px, 1.111111vw);
+            white-space: nowrap;
+        }
+    }
     section.hero.hotel-select .videos-descriptions-comp .inhalt .ymap-comp {
         width: 50%;
         height: 100%;

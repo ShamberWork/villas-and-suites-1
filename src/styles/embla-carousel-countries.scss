@@ -216,12 +216,12 @@
 
 @media screen and (max-width: 768px) {
     .corallium.embla-carousel {
-        padding: clamp(80px, 21.32vw, 153.5px) clamp(16px, 4.166667vw, 30px);
+        padding: min(80px, 11.111111vw) min(30px, 4.166667vw);
     }
 
     .corallium.embla-carousel .travel-carousel-wrapper {
         max-width: 660px;
-        gap: 24px;
+        gap: min(24px, 3.333333vw);
     }
 
     .corallium.embla-carousel .embla__slide {
@@ -232,6 +232,7 @@
     .corallium.embla-carousel .embla__slide__inner {
         width: 82.655246%;
         aspect-ratio: 193 / 222;
+        border-radius: min(12px, 1.666667vw);
     }
 
     .corallium.embla-carousel .embla__slide.is-active .embla__slide__inner {
@@ -240,25 +241,35 @@
     }
 
     .corallium.embla-carousel .embla__slide__title {
-        font-size: 24px;
+        font-size: min(24px, 3.333333vw);
         font-weight: 400;
-        line-height: 32px;
+        line-height: min(32px, 4.444444vw);
     }
 
     .corallium.embla-carousel .embla__slide.is-active .embla__slide__title {
-        font-size: 28px;
+        font-size: min(28px, 3.888889vw);
         font-weight: 700;
-        line-height: 32px;
+        line-height: min(32px, 4.444444vw);
     }
 
     .corallium.embla-carousel .embla__slide__overlay {
         height: 21.621622%;
-        padding-bottom: 15px;
+        padding-bottom: min(15px, 2.083333vw);
     }
 
     .corallium.embla-carousel .embla__slide.is-active .embla__slide__overlay {
         height: 23.880597%;
-        padding-bottom: 22px;
+        padding-bottom: min(22px, 3.055556vw);
+    }
+
+    .corallium.embla-carousel .embla__pagination {
+        height: min(3px, 0.416667vw);
+        gap: min(6px, 0.833333vw);
+    }
+
+    .corallium.embla-carousel .embla__dot {
+        width: min(30px, 4.166667vw);
+        height: min(3px, 0.416667vw);
     }
 
     .corallium.embla-carousel .embla__controls {
