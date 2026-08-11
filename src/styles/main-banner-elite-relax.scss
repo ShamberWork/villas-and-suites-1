@@ -103,6 +103,14 @@ section.hero.kv .hero__subtitle {
     }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    section.hero.kv article.outer {
+        height: clamp(520px, 75vw, 576px);
+        min-height: 0;
+        aspect-ratio: auto;
+    }
+}
+
 @media screen and (max-width: 480px) {
     section.hero.kv article.outer {
         min-height: 490px;

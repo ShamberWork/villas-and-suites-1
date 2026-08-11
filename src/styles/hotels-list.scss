@@ -193,8 +193,7 @@
     }
     @media screen and (max-width: 768px) {
         section.hero.hotel-select .hotel-carousel-controls {
-            width: min(660px, 91.666667vw);
-            height: min(112px, 15.555556vw);
+            display: none;
         }
         section.hero.hotel-select .hotel-carousel-button {
             width: min(16px, 2.222222vw);
