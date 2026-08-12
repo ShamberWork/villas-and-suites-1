@@ -760,13 +760,3 @@
             width: unset !important;
         }
     }
-
-#monkey-app, [data-widget-type] {
-    width: 100%;
-    background: #f1f7fb;
-    flex-direction: column;
-    align-items: center;
-    gap: 0;
-    display: flex;
-    overflow: hidden;
-}
