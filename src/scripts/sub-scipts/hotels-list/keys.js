@@ -1,19 +1,20 @@
-import {mainContainer, widgetContainer} from "../utils/mainContainer.js";
-import {countryFromSlide} from "./countryFromSlide.js"
-import {markerParts} from "./markerParts.js"
+import { countryFromSlide } from "./countryFromSlide.js"
+import { markerParts } from "./markerParts.js"
 
 export const stateKey = "__villasAndSuitesState"
+export const mainContainer = '#monkey-app';
+export const fallbackContainer = '#__next';
 
 export function createContext(container = document) {
-    const isMatch = container.matches?.(mainContainer) || container.matches?.(widgetContainer);
+    let root = container.matches?.(mainContainer) ? container : null;
 
-    const root = isMatch
-        ? container
-        : container.querySelector?.(mainContainer)
-        || container.querySelector?.(widgetContainer)
-        || document.querySelector(mainContainer)
-        || document.querySelector(widgetContainer)
-        || container;
+    if (!root) {
+        root = container.querySelector?.(mainContainer)
+            || document.querySelector(mainContainer)
+            || container.querySelector?.(fallbackContainer)
+            || document.querySelector(fallbackContainer)
+            || container;
+    }
 
     if (!root?.querySelectorAll) return null
 
@@ -23,17 +24,22 @@ export function createContext(container = document) {
     const videosContainer = root.querySelector(".videos-comp")
     const descriptionsContainer = root.querySelector(".descriptions")
     const logoContainer = root.querySelector(".logo-nav-flicker")
+
     const hotelFromQuery = new URLSearchParams(window.location.search).get("hotel")
     const queriedHotel = hotelFromQuery
         ? [...root.querySelectorAll(".hotel-card[data-hotel-key]")].find((card) => card.dataset.hotelKey === hotelFromQuery)
         : null
+
     const queriedMarker = queriedHotel?.dataset.contentMarker || ""
     const queriedParts = queriedMarker ? markerParts(queriedMarker) : null
+
     const activeCountrySlide = countryItems.find((item) => item.classList.contains("is-active")) || countryItems[0]
     const selectedCountry = activeCountrySlide ? countryFromSlide(activeCountrySlide) : ""
+
     const initialCountry = queriedParts?.country || selectedCountry || "turkey"
     const defaultRegion = regionButtons.find((button) => button.dataset.contentControl.startsWith(`${initialCountry}.`) && button.classList.contains("selected"))
         || regionButtons.find((button) => button.dataset.contentControl.startsWith(`${initialCountry}.`))
+
     const state = {
         country: initialCountry,
         region: queriedParts?.region || defaultRegion?.dataset.contentControl.split(".")[1] || "",
