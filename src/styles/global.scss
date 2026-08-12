@@ -58,6 +58,9 @@
         align-items: center;
         display: flex;
     }
+    .hero.hotel-select {
+        background-color: white;
+    }
     @media screen and (max-width: 768px) {
         .hidden-on-mobile {
             display: none !important;
@@ -373,7 +376,7 @@
         font-style: normal;
     }
     section.hero {
-        background: #fff;
+        background: #f1f7fb;
     }
     section.hero.kv {
         color: #fff;
@@ -762,7 +765,7 @@ body {
     background: #f1f7fb;
 }
 
-#monkey-app {
+#monkey-app, [data-wiget] {
     width: 100%;
     background: #f1f7fb;
     flex-direction: column;

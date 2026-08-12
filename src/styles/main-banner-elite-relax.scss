@@ -1,9 +1,10 @@
-html:has(#monkey-app),
-body:has(#monkey-app) {
+html:has(#monkey-app, [data-widget-type="1"]),
+body:has(#monkey-app, [data-widget-type="1"]) {
     overflow-x: hidden;
 }
 
-#monkey-app {
+#monkey-app,
+[data-widget-type="1"] {
     width: 100vw;
     max-width: none;
     margin-right: calc(50% - 50vw);
@@ -11,11 +12,11 @@ body:has(#monkey-app) {
 }
 
 section.hero.kv {
-    --hero-background-image: url("/elite-villas-banner.webp");
+    --hero-background-image: url("https://b2ccdn.coral.ru/content/landing-pages/villas-and-suits/elite-villas-banner.webp");
     width: 100vw;
     max-width: none !important;
-    margin-right: calc(50% - 50vw) !important;
-    margin-left: calc(50% - 50vw) !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
     margin-top: 0 !important;
     color: var(--coral-common-white, #fff);
     background: none !important;
@@ -72,6 +73,12 @@ section.hero.kv .hero__subtitle {
     font-weight: 400;
     line-height: 1.2;
     margin: 0;
+}
+
+@media screen and (min-width: 1920px) {
+    section.hero.kv .hero__copy {
+        left: max(11.17%, calc((100vw - 1370px) / 2 + 24px));
+    }
 }
 
 @media screen and (max-width: 768px) {
