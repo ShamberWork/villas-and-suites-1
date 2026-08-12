@@ -1,13 +1,20 @@
-import {mainContainer} from "../utils/mainContainer.js";
+import {mainContainer, widgetContainer} from "../utils/mainContainer.js";
 import {countryFromSlide} from "./countryFromSlide.js"
 import {markerParts} from "./markerParts.js"
 
 export const stateKey = "__villasAndSuitesState"
 
 export function createContext(container = document) {
-    const root = container.matches?.(mainContainer)
+    const isMatch = container.matches?.(mainContainer) || container.matches?.(widgetContainer);
+
+    const root = isMatch
         ? container
-        : container.querySelector?.(mainContainer) || document.querySelector(mainContainer) || container
+        : container.querySelector?.(mainContainer)
+        || container.querySelector?.(widgetContainer)
+        || document.querySelector(mainContainer)
+        || document.querySelector(widgetContainer)
+        || container;
+
     if (!root?.querySelectorAll) return null
 
     const countryItems = [...root.querySelectorAll(".embla-carousel .embla__slide")]
