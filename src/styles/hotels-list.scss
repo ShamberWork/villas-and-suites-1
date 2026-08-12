@@ -294,10 +294,10 @@
         text-decoration: none;
         transition: background 0.5s, color 0.5s;
         display: inline-flex;
-        box-shadow: inset 0 0 0 2px #efd48f;
+        box-shadow: inset 0 0 0 2px var(--coral-button-villas-and-suites);
         font-size: inherit !important;
         color: #fff !important;
-        color: #efd48f !important;
+        color: var(--coral-button-villas-and-suites) !important;
         outline: none !important;
         font-size: 0.7em !important;
     }

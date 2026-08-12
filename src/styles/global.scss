@@ -36,6 +36,7 @@
         --coral-yellow-lite: #efd48f;
         --coral-red-error: #f33;
         --coral-red-warn: #ffdcdc;
+        --coral-button-villas-and-suites: #b6985b;
     }
     body .contentLayout-BaseContainer .notcritical {
         padding: 0;
@@ -318,7 +319,7 @@
         user-select: none;
         height: 2.4em;
         cursor: pointer;
-        background: #f0ab00;
+        background: var(--coral-button-villas-and-suites);
         border: 0;
         border-radius: 0.5em;
         justify-content: center;
@@ -759,13 +760,8 @@
             width: unset !important;
         }
     }
-html,
-body {
-    margin: 0;
-    background: #f1f7fb;
-}
 
-#monkey-app, [data-wiget] {
+#monkey-app, [data-widget-type] {
     width: 100%;
     background: #f1f7fb;
     flex-direction: column;

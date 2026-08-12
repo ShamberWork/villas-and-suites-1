@@ -1,1 +1,1 @@
-export const mainContainer = '#monkey-app, [data-widget]';
+export const mainContainer = '#monkey-app';
